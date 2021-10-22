@@ -1,4 +1,4 @@
-# WebHook que notifica cuando una actualización del CS:GO es lanzada:
+# Script que notifica por Discord y Whatsapp cuando una actualización del CS:GO es lanzada
 ## Este proyecto fue creado por [Julián](https://github.com/Gtadictos21/) y [Galo](https://github.com/Galo223344/)
 
 Este script de Python hace un web scraping al RSS del [blog.counter-strike.net](https://blog.counter-strike.net/?feed=rss) y envia un webhook y un mensaje por Whatsapp con el titulo, la descripción y el link en cuanto una actualización es lanzada. La verificación se realiza cada 10 segundos, y se puede modificar desde el script.
