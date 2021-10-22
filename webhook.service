@@ -1,0 +1,13 @@
+# webhook.service
+
+[Unit]
+Description=Inicia WebHook
+
+[Service]
+User=root
+ExecStart=/usr/bin/python3 /path/to/file/Webhook.py
+EnvironmentFile=/path/to/file/.env
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
