@@ -16,7 +16,7 @@ https://github.com/Gtadictos21/csgo-updates-webhook.git
 pip install discord-webhook
 ```
 ```
-pip3 install pytz
+pip install pytz
 ```
 ```
 pip install BeautifulSoup4
@@ -28,7 +28,7 @@ pip install python-dotenv
 pip install colorama
 ```
 
-**ATENCIÓN:** Tienen que agregar el [link a su WebHook](https://support.discord.com/hc/es/articles/228383668-Introducci%C3%B3n-a-los-webhook) en el archivo .env, y agregar su numero de celular, y la llave de la API de whatsapp para que el script les envie un mensaje (Esto es opcional). Claro que pueden personalizar cada mensaje, y pueden adaptarlo a sus necesidades.
+**ATENCIÓN:** Tienen que agregar el [link a su WebHook](https://support.discord.com/hc/es/articles/228383668-Introducci%C3%B3n-a-los-webhook) en el archivo .env, y tienen que agregar su numero de celular, y la llave de la API de Whatsapp para que el script les envie un mensaje (Esto es opcional). Claro que pueden personalizar cada mensaje, y pueden adaptarlo a sus necesidades.
 
 Para ejecutar el WebHook: `python3 Webhook.py`, o pueden hacerlo con [Systemd](https://github.com/Gtadictos21/csgo-updates-webhook/blob/main/webhook.service) (recomendable)
 
