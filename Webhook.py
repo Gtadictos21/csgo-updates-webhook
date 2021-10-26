@@ -25,7 +25,11 @@ tz = pytz.timezone('America/Argentina/Buenos_Aires')
 
 while True:
     url = "https://blog.counter-strike.net/?feed=rss" # URL de la pagina a la cual le saca el contenido
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
+    headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache"
+    }
     resp = requests.get(url, headers=headers)
     print(f'{Fore.CYAN}Codigo de respuesta de{Fore.MAGENTA} \"{url}\": {Fore.GREEN}{resp.status_code}{Style.RESET_ALL}') # Dice el codigo de respuesta (200 = OK | 403 = Inaccesible)
     soup = BeautifulSoup(resp.content, features="html.parser")
@@ -90,7 +94,11 @@ while True:
         print(f'{Fore.CYAN}Codigo de respuesta de{Fore.MAGENTA} \"{url_whatsapp}\": {Fore.GREEN}{response.status_code}{Style.RESET_ALL}') # Dice el codigo de respuesta (200 = OK | 403 = Inaccesible)
                             
     url2 = "https://blog.counter-strike.net/index.php/category/updates/feed/" # URL de la pagina a la cual le saca el contenido
-    headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36"}
+    headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36",
+    "Cache-Control": "no-cache",
+    "Pragma": "no-cache"
+    }
     resp = requests.get(url2, headers=headers)
     print(f'{Fore.CYAN}Codigo de respuesta de{Fore.MAGENTA} \"{url2}\": {Fore.GREEN}{resp.status_code}{Style.RESET_ALL}') # Dice el codigo de respuesta (200 = OK | 403 = Inaccesible)
     soup = BeautifulSoup(resp.content, features="html.parser")
